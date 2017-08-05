@@ -1,4 +1,4 @@
-package poker.net;
+package work.notech.poker.net;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -9,8 +9,8 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-import poker.frames.MainFrame;
-import poker.util.Utils;
+import work.notech.poker.frames.MainFrame;
+import work.notech.poker.util.Utils;
 
 public class Client extends Playable {
 	private Socket client = null;

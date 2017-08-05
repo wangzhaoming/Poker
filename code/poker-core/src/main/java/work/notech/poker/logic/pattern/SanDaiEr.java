@@ -1,8 +1,8 @@
-package poker.logic.pattern;
+package work.notech.poker.logic.pattern;
 
 import java.util.List;
 
-import poker.logic.Card;
+import work.notech.poker.logic.Card;
 
 public class SanDaiEr extends BasePattern {
 

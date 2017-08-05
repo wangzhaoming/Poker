@@ -1,4 +1,4 @@
-package poker.logic;
+package work.notech.poker.logic;
 
 import java.util.ArrayList;
 import java.util.Collections;

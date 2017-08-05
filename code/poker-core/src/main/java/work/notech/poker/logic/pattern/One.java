@@ -1,14 +1,14 @@
-package poker.logic.pattern;
+package work.notech.poker.logic.pattern;
 
 import java.util.List;
 
-import poker.logic.Card;
+import work.notech.poker.logic.Card;
 
-public class LianDui extends BasePattern {
+public class One extends BasePattern {
 
-	public LianDui(List<Card> cards) {
+	public One(List<Card> cards) {
 		super(cards);
-		type = 8;
+		type = 1;
 	}
 
 	@Override
@@ -20,7 +20,7 @@ public class LianDui extends BasePattern {
 			return true;
 		}
 
-		if (o.getType() == type && o.getCardNumber() == cards.size()) {
+		if (o.getType() == type) {
 			if (cards.get(0).getValue() < o.getCards().get(0).getValue()) {
 				return true;
 			}
@@ -28,5 +28,4 @@ public class LianDui extends BasePattern {
 
 		return false;
 	}
-
 }

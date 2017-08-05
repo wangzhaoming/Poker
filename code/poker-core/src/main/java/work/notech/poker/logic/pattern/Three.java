@@ -1,14 +1,14 @@
-package poker.logic.pattern;
+package work.notech.poker.logic.pattern;
 
 import java.util.List;
 
-import poker.logic.Card;
+import work.notech.poker.logic.Card;
 
-public class ShunZi extends BasePattern {
+public class Three extends BasePattern {
 
-	public ShunZi(List<Card> cards) {
+	public Three(List<Card> cards) {
 		super(cards);
-		type = 7;
+		type = 3;
 	}
 
 	@Override
@@ -20,7 +20,7 @@ public class ShunZi extends BasePattern {
 			return true;
 		}
 
-		if (o.getType() == type && o.getCardNumber() == cards.size()) {
+		if (o.getType() == type) {
 			if (cards.get(0).getValue() < o.getCards().get(0).getValue()) {
 				return true;
 			}

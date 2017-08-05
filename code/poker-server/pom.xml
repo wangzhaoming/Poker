@@ -11,5 +11,10 @@
 
     <artifactId>poker-server</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>work.notech</groupId>
+            <artifactId>poker-core</artifactId>
+        </dependency>
+    </dependencies>
 </project>

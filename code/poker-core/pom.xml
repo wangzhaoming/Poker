@@ -9,12 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>poker-client-gui</artifactId>
+    <artifactId>poker-core</artifactId>
 
-    <dependencies>
-        <dependency>
-            <groupId>work.notech</groupId>
-            <artifactId>poker-core</artifactId>
-        </dependency>
-    </dependencies>
+
 </project>

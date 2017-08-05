@@ -1,22 +1,19 @@
-package poker.logic.pattern;
+package work.notech.poker.logic.pattern;
 
 import java.util.List;
 
-import poker.logic.Card;
+import work.notech.poker.logic.Card;
 
-public class One extends BasePattern {
+public class ZhaDan extends BasePattern {
 
-	public One(List<Card> cards) {
+	public ZhaDan(List<Card> cards) {
 		super(cards);
-		type = 1;
+		type = 4;
 	}
 
 	@Override
 	public boolean validate(BasePattern o) {
 		if (o.getType() == 10) {
-			return true;
-		}
-		if (o.getType() == 4) {
 			return true;
 		}
 

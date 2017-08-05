@@ -1,4 +1,4 @@
-package poker.logic;
+package work.notech.poker.logic;
 
 public class Card implements Comparable<Card>{
 	private int digit;//小王16,4，大王17,5

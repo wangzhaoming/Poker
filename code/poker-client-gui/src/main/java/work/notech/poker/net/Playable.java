@@ -1,12 +1,11 @@
-package poker.net;
+package work.notech.poker.net;
 
 import java.util.Collections;
 import java.util.List;
+import javax.swing.*;
 
-import javax.swing.JOptionPane;
-
-import poker.frames.MainFrame;
-import poker.logic.Card;
+import work.notech.poker.frames.MainFrame;
+import work.notech.poker.logic.Card;
 
 public abstract class Playable {
 	protected int id = 1;

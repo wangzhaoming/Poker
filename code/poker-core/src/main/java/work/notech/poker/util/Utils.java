@@ -1,4 +1,4 @@
-package poker.util;
+package work.notech.poker.util;
 
 import java.net.Inet4Address;
 import java.net.InetAddress;
@@ -10,10 +10,9 @@ import java.util.Collections;
 import java.util.Enumeration;
 import java.util.List;
 import java.util.Map;
+import javax.swing.*;
 
-import javax.swing.JLabel;
-
-import poker.logic.Card;
+import work.notech.poker.logic.Card;
 
 public class Utils {
 	public static List<JLabel> retriveLabelListFromMap(Map<JLabel, Card> map) {
