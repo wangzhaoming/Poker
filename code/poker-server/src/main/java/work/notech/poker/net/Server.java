@@ -51,6 +51,9 @@ public class Server {
                 try {
                     if ((msg = in.readLine()) != null) {
                         sendMsg(msg);
+                        if ("init".equals(msg)) {
+                            init();
+                        }
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
