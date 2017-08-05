@@ -5,7 +5,9 @@
     <groupId>work.notech</groupId>
     <artifactId>poker</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
-    <dependencies>
-    </dependencies>
+    <modules>
+        <module>poker-server</module>
+        <module>poker-client-gui</module>
+    </modules>
+    <packaging>pom</packaging>
 </project>
