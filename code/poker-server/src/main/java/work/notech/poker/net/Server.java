@@ -1,10 +1,13 @@
 package work.notech.poker.net;
 
 import work.notech.poker.logic.Cards;
+import work.notech.poker.room.GameRoom;
 
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -19,11 +22,13 @@ public class Server {
 
     private boolean running = true;
 
+    List<GameRoom> gameRooms = new ArrayList<>();
+
     public Server() throws IOException {
         ServerSocket server = new ServerSocket(PORT, 3);
         pool = Executors.newCachedThreadPool();
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < sockets.length; i++) {
             try {
                 sockets[i] = server.accept();
                 pool.execute(new ClientHandler(sockets[i]));
@@ -35,6 +40,7 @@ public class Server {
         server.close();
         init();
     }
+
 
     class ClientHandler implements Runnable {
 
@@ -52,6 +58,9 @@ public class Server {
                     if ((msg = in.readLine()) != null) {
                         sendMsg(msg);
                         if ("init".equals(msg)) {
+                            init();
+                        }
+                        if ("join".equals(msg)) {
                             init();
                         }
                     }

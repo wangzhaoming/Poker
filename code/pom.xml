@@ -24,6 +24,11 @@
                 <artifactId>poker-core</artifactId>
                 <version>${poker.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.json</groupId>
+                <artifactId>json</artifactId>
+                <version>20170516</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>
